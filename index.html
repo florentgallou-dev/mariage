@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notre Mariage — Prénom & Prénom</title>
+  <meta name="description" content="Faire-part de mariage — Nous avons le plaisir de vous inviter à célébrer notre union.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HERO ============ -->
+  <header id="hero" class="section hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content fade-in">
+      <p class="hero__subtitle">Nous nous marions</p>
+      <h1 class="hero__title">Prénom <span class="amp">&amp;</span> Prénom</h1>
+      <div class="hero__date">12 Juillet 2026</div>
+      <a href="#details" class="btn">Découvrir</a>
+    </div>
+  </header>
+
+  <!-- ============ NOTRE HISTOIRE ============ -->
+  <section id="story" class="section story">
+    <div class="container">
+      <h2 class="section__title reveal">Notre Histoire</h2>
+      <div class="section__divider reveal"></div>
+      <div class="story__timeline">
+        <div class="story__item reveal">
+          <div class="story__date">Été 2020</div>
+          <p class="story__text">Notre première rencontre, un hasard devenu destin…</p>
+        </div>
+        <div class="story__item reveal">
+          <div class="story__date">Hiver 2021</div>
+          <p class="story__text">Notre premier voyage ensemble, des souvenirs inoubliables…</p>
+        </div>
+        <div class="story__item reveal">
+          <div class="story__date">Printemps 2025</div>
+          <p class="story__text">La demande en mariage, un moment suspendu dans le temps…</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DÉTAILS ============ -->
+  <section id="details" class="section details">
+    <div class="container">
+      <h2 class="section__title reveal">La Célébration</h2>
+      <div class="section__divider reveal"></div>
+      <div class="details__grid">
+        <div class="details__card reveal">
+          <div class="details__icon">⛪</div>
+          <h3>Cérémonie</h3>
+          <p class="details__time">14h30</p>
+          <p>Église Saint-Martin<br>12 Rue de l'Église<br>75000 Paris</p>
+        </div>
+        <div class="details__card reveal">
+          <div class="details__icon">🥂</div>
+          <h3>Réception</h3>
+          <p class="details__time">18h00</p>
+          <p>Domaine de la Rose<br>Chemin des Vignes<br>77000 Melun</p>
+        </div>
+        <div class="details__card reveal">
+          <div class="details__icon">🎶</div>
+          <h3>Soirée</h3>
+          <p class="details__time">21h00</p>
+          <p>Dîner, danse et fête<br>jusqu'au bout de la nuit !</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section id="countdown" class="section countdown">
+    <div class="container">
+      <h2 class="section__title reveal">Compte à Rebours</h2>
+      <div class="section__divider reveal"></div>
+      <div class="countdown__timer reveal" data-date="2026-07-12T14:30:00">
+        <div class="countdown__block">
+          <span class="countdown__number" id="cd-days">--</span>
+          <span class="countdown__label">Jours</span>
+        </div>
+        <div class="countdown__block">
+          <span class="countdown__number" id="cd-hours">--</span>
+          <span class="countdown__label">Heures</span>
+        </div>
+        <div class="countdown__block">
+          <span class="countdown__number" id="cd-minutes">--</span>
+          <span class="countdown__label">Minutes</span>
+        </div>
+        <div class="countdown__block">
+          <span class="countdown__number" id="cd-seconds">--</span>
+          <span class="countdown__label">Secondes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INFOS PRATIQUES ============ -->
+  <section id="info" class="section info">
+    <div class="container">
+      <h2 class="section__title reveal">Infos Pratiques</h2>
+      <div class="section__divider reveal"></div>
+      <div class="info__grid">
+        <div class="info__card reveal">
+          <h3>Dress Code</h3>
+          <p>Tenue champêtre chic — Couleurs douces et naturelles bienvenues.</p>
+        </div>
+        <div class="info__card reveal">
+          <h3>Hébergement</h3>
+          <p>Des chambres sont disponibles sur place. Contactez-nous pour réserver.</p>
+        </div>
+        <div class="info__card reveal">
+          <h3>Liste de Mariage</h3>
+          <p>Votre présence est notre plus beau cadeau. Si vous souhaitez contribuer, une urne sera à disposition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RSVP ============ -->
+  <section id="rsvp" class="section rsvp">
+    <div class="container">
+      <h2 class="section__title reveal">Confirmez Votre Présence</h2>
+      <div class="section__divider reveal"></div>
+      <p class="rsvp__intro reveal">Merci de nous confirmer votre présence avant le <strong>1er Juin 2026</strong>.</p>
+      <form class="rsvp__form reveal" id="rsvp-form">
+        <div class="form__group">
+          <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+        </div>
+        <div class="form__group">
+          <input type="email" id="email" name="email" placeholder="Votre email" required>
+        </div>
+        <div class="form__group">
+          <select id="guests" name="guests" required>
+            <option value="" disabled selected>Nombre de personnes</option>
+            <option value="1">1 personne</option>
+            <option value="2">2 personnes</option>
+            <option value="3">3 personnes</option>
+            <option value="4">4 personnes</option>
+            <option value="5">5+ personnes</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <textarea id="message" name="message" placeholder="Un petit mot ? Allergies alimentaires ?" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn">Confirmer</button>
+      </form>
+      <div class="rsvp__success" id="rsvp-success" hidden>
+        <p>Merci ! Votre réponse a bien été enregistrée. ✨</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p class="footer__text">Prénom <span class="amp">&amp;</span> Prénom — 12 Juillet 2026</p>
+    <p class="footer__heart">♥</p>
+  </footer>
+
+  <!-- NAV DOTS -->
+  <nav class="nav-dots" aria-label="Navigation sections">
+    <a href="#hero" class="nav-dot active" aria-label="Accueil"></a>
+    <a href="#story" class="nav-dot" aria-label="Notre histoire"></a>
+    <a href="#details" class="nav-dot" aria-label="Détails"></a>
+    <a href="#countdown" class="nav-dot" aria-label="Compte à rebours"></a>
+    <a href="#info" class="nav-dot" aria-label="Infos pratiques"></a>
+    <a href="#rsvp" class="nav-dot" aria-label="RSVP"></a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
