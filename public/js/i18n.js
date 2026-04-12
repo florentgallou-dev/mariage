@@ -14,7 +14,8 @@
       'hero.cta':      'Découvrir',
 
       'details.title':    'La Célébration',
-      'details.subtitle': 'Nous vous invitons à célébrer notre union dont voici le programme',
+      'details.subtitle': 'Nous vous invitons à célébrer notre union',
+      'details.subtitle2': 'voici le programme',
       'details.date':     'Le vendredi 15 mai 2026',
       'details.date2':    'Le samedi 16 mai 2026',
 
@@ -65,11 +66,6 @@
 
       'rsvp.title':       'Une question ?',
       'rsvp.intro':       "Une information, un régime alimentaire, une question ? N'hésitez pas à nous contacter.",
-      'rsvp.name':        'Votre nom',
-      'rsvp.email':       'Votre email',
-      'rsvp.message':     'Un petit mot ? Allergies alimentaires ?',
-      'rsvp.submit':      'Envoyer',
-      'rsvp.success':     'Merci ! Votre message a bien été reçu. ✨',
 
       'footer.date': '15 Mai 2026',
     },
@@ -80,7 +76,8 @@
       'hero.cta':      'Discover',
 
       'details.title':    'The Celebration',
-      'details.subtitle': 'We invite you to celebrate our union — here is the programme',
+      'details.subtitle': 'We invite you to celebrate our union',
+      'details.subtitle2': 'here is the programme',
       'details.date':     'Friday, May 15, 2026',
       'details.date2':    'Saturday, May 16, 2026',
 
@@ -131,11 +128,6 @@
 
       'rsvp.title':       'A question?',
       'rsvp.intro':       "Any information, dietary requirement or question? Don't hesitate to get in touch.",
-      'rsvp.name':        'Your name',
-      'rsvp.email':       'Your email',
-      'rsvp.message':     'A few words? Dietary requirements?',
-      'rsvp.submit':      'Send',
-      'rsvp.success':     'Thank you! Your message has been received. ✨',
 
       'footer.date': 'May 15, 2026',
     },
@@ -146,7 +138,8 @@
       'hero.cta':      'Ontdekken',
 
       'details.title':    'De Viering',
-      'details.subtitle': 'We nodigen u uit om ons huwelijk te vieren — dit is het programma',
+      'details.subtitle': 'We nodigen u uit om ons huwelijk te vieren',
+      'details.subtitle2': 'dit is het programma',
       'details.date':     'Vrijdag 15 mei 2026',
       'details.date2':    'Zaterdag 16 mei 2026',
 
@@ -197,11 +190,6 @@
 
       'rsvp.title':       'Een vraag?',
       'rsvp.intro':       'Informatie, dieetwensen of een vraag? Aarzel niet om contact met ons op te nemen.',
-      'rsvp.name':        'Uw naam',
-      'rsvp.email':       'Uw e-mailadres',
-      'rsvp.message':     'Een woordje? Voedingswensen?',
-      'rsvp.submit':      'Verzenden',
-      'rsvp.success':     'Dank u! Uw bericht is goed ontvangen. ✨',
 
       'footer.date': '15 Mei 2026',
     },
