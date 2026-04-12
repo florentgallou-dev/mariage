@@ -582,6 +582,45 @@ a {
   50% { transform: scale(1.25); }
 }
 
+/* ---------- LANG SWITCHER ---------- */
+.lang-switcher {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 200;
+  display: flex;
+  gap: 0.25rem;
+  background: rgba(250, 247, 242, 0.88);
+  backdrop-filter: blur(8px);
+  padding: 0.3rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--sand);
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--warm-gray);
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-btn:hover {
+  color: var(--terracotta);
+  background: rgba(196, 122, 90, 0.1);
+}
+
+.lang-btn.active {
+  color: var(--ivory);
+  background: var(--terracotta);
+}
+
 /* ---------- NAV DOTS ---------- */
 .nav-dots {
   position: fixed;

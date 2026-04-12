@@ -1,0 +1,258 @@
+/* ========================================
+   i18n.js — Traductions FR / EN / NL
+   Utilise data-i18n, data-i18n-html,
+   data-i18n-placeholder sur les éléments HTML
+   ======================================== */
+
+(function () {
+  'use strict';
+
+  const translations = {
+    fr: {
+      'hero.subtitle': 'Nous nous marions',
+      'hero.date':     '15 mai 2026',
+      'hero.cta':      'Découvrir',
+
+      'details.title':    'La Célébration',
+      'details.subtitle': 'Nous vous invitons à célébrer notre union dont voici le programme',
+      'details.date':     'Le vendredi 15 mai 2026',
+      'details.date2':    'Le samedi 16 mai 2026',
+
+      'civil.title': 'Mariage civil',
+      'civil.place': 'Mairie de Bacqueville-en-Caux',
+      'civil.desc':  'Nous avons la joie de vous convier pour le mariage civil.',
+
+      'laique.title': 'Cérémonie laïque',
+      'laique.place': 'École élémentaire Thomas Pesquet<br>Bacqueville-en-Caux',
+      'laique.desc':  'Les "oui" officiels prononcés, place à la cérémonie laïque, voyage entre nos histoires, nos familles et les promesses que nous choisissons d\'honorer.',
+
+      'vin.title': "Vin d'honneur",
+      'vin.place': 'École élémentaire Thomas Pesquet<br>Bacqueville-en-Caux',
+      'vin.desc':  "Après l'émotion, la joie, on se retrouve pour le vin d'honneur, partageons rires, verres levés et l'envie simple de profiter.",
+
+      'soiree.title': 'Soirée & Repas',
+      'soiree.place': 'École élémentaire Thomas Pesquet<br>Bacqueville-en-Caux',
+      'soiree.desc':  "La soirée se prolongera autour d'un repas, entre discussions qui s'étirent, rires qui résonnent et verres qui se remplissent encore !",
+
+      'brunch.title': 'Brunch',
+      'brunch.place': 'École élémentaire Thomas Pesquet<br>Bacqueville-en-Caux',
+      'brunch.desc':  "Quand les cœurs sont remplis et les têtes parfois encore embrumées… Retrouvons-nous pour un brunch en toute simplicité, entre rires, jeux et douceurs du moment présent.",
+
+      'bbq.title': 'Barbecue',
+      'bbq.place': 'École élémentaire Thomas Pesquet<br>Bacqueville-en-Caux',
+      'bbq.desc':  "Et pour les derniers survivants, nous vous proposons de prolonger la magie autour d'un barbecue afin de profiter d'un dernier coucher de soleil tous ensemble.",
+
+      'countdown.title':   'Compte à Rebours',
+      'countdown.days':    'Jours',
+      'countdown.hours':   'Heures',
+      'countdown.minutes': 'Minutes',
+      'countdown.seconds': 'Secondes',
+
+      'info.title': 'Infos Pratiques',
+
+      'dresscode.title': 'Code vestimentaire',
+      'dresscode.desc':  "Faites vous plaisir mais prévoyez une tenue plus décontractée pour le lendemain.",
+
+      'hebergement.title': 'Hébergement',
+      'hebergement.desc':  "Des logements sont trouvables dans les alentours. N'hésitez pas à nous demander pour vous aider à en trouver.",
+
+      'liste.title': 'Liste de Mariage',
+      'liste.desc':  'Votre présence est notre plus beau cadeau. Si vous souhaitez contribuer, une urne sera à disposition.',
+
+      'capsule.title': 'Capsule temporelle',
+      'capsule.desc1': 'Lors de notre mariage, nous créerons une capsule temporelle que nous ouvrirons lors de notre 5ème anniversaire.',
+      'capsule.desc2': 'Toute participation : lettre, photo, objet symbolique, est la bienvenue.',
+
+      'rsvp.title':       'Une question ?',
+      'rsvp.intro':       "Une information, un régime alimentaire, une question ? N'hésitez pas à nous contacter.",
+      'rsvp.name':        'Votre nom',
+      'rsvp.email':       'Votre email',
+      'rsvp.message':     'Un petit mot ? Allergies alimentaires ?',
+      'rsvp.submit':      'Envoyer',
+      'rsvp.success':     'Merci ! Votre message a bien été reçu. ✨',
+
+      'footer.date': '15 Mai 2026',
+    },
+
+    en: {
+      'hero.subtitle': "We're getting married",
+      'hero.date':     'May 15, 2026',
+      'hero.cta':      'Discover',
+
+      'details.title':    'The Celebration',
+      'details.subtitle': 'We invite you to celebrate our union — here is the programme',
+      'details.date':     'Friday, May 15, 2026',
+      'details.date2':    'Saturday, May 16, 2026',
+
+      'civil.title': 'Civil ceremony',
+      'civil.place': 'Town hall — Bacqueville-en-Caux',
+      'civil.desc':  'We are delighted to invite you to our civil wedding ceremony.',
+
+      'laique.title': 'Secular ceremony',
+      'laique.place': 'Thomas Pesquet primary school<br>Bacqueville-en-Caux',
+      'laique.desc':  "With the official \"I do's\" exchanged, we invite you to a secular ceremony — a journey through our stories, our families and the promises we choose to honour.",
+
+      'vin.title': 'Cocktail hour',
+      'vin.place': 'Thomas Pesquet primary school<br>Bacqueville-en-Caux',
+      'vin.desc':  'After the emotion and joy, we gather for drinks — laughter, raised glasses and the simple pleasure of being together.',
+
+      'soiree.title': 'Evening & Dinner',
+      'soiree.place': 'Thomas Pesquet primary school<br>Bacqueville-en-Caux',
+      'soiree.desc':  'The evening continues with dinner, long conversations, ringing laughter and glasses that keep getting refilled!',
+
+      'brunch.title': 'Brunch',
+      'brunch.place': 'Thomas Pesquet primary school<br>Bacqueville-en-Caux',
+      'brunch.desc':  'When hearts are full and heads are still a little hazy… join us for a relaxed brunch, full of laughter, games and sweet moments.',
+
+      'bbq.title': 'Barbecue',
+      'bbq.place': 'Thomas Pesquet primary school<br>Bacqueville-en-Caux',
+      'bbq.desc':  'For the last survivors, we invite you to extend the magic around a barbecue and enjoy one final sunset together.',
+
+      'countdown.title':   'Countdown',
+      'countdown.days':    'Days',
+      'countdown.hours':   'Hours',
+      'countdown.minutes': 'Minutes',
+      'countdown.seconds': 'Seconds',
+
+      'info.title': 'Practical Info',
+
+      'dresscode.title': 'Dress code',
+      'dresscode.desc':  "Feel free to dress up, but remember a more relaxed outfit for the day after!",
+
+      'hebergement.title': 'Accommodation',
+      'hebergement.desc':  "Accommodation can be found in the surrounding area. Don't hesitate to ask us for help.",
+
+      'liste.title': 'Wedding List',
+      'liste.desc':  'Your presence is our greatest gift. If you wish to contribute, a collection box will be available.',
+
+      'capsule.title': 'Time capsule',
+      'capsule.desc1': 'At our wedding, we will create a time capsule to be opened on our 5th anniversary.',
+      'capsule.desc2': 'Any contribution — a letter, photo or meaningful object — is welcome.',
+
+      'rsvp.title':       'A question?',
+      'rsvp.intro':       "Any information, dietary requirement or question? Don't hesitate to get in touch.",
+      'rsvp.name':        'Your name',
+      'rsvp.email':       'Your email',
+      'rsvp.message':     'A few words? Dietary requirements?',
+      'rsvp.submit':      'Send',
+      'rsvp.success':     'Thank you! Your message has been received. ✨',
+
+      'footer.date': 'May 15, 2026',
+    },
+
+    nl: {
+      'hero.subtitle': 'We gaan trouwen',
+      'hero.date':     '15 mei 2026',
+      'hero.cta':      'Ontdekken',
+
+      'details.title':    'De Viering',
+      'details.subtitle': 'We nodigen u uit om ons huwelijk te vieren — dit is het programma',
+      'details.date':     'Vrijdag 15 mei 2026',
+      'details.date2':    'Zaterdag 16 mei 2026',
+
+      'civil.title': 'Burgerlijk huwelijk',
+      'civil.place': 'Gemeentehuis — Bacqueville-en-Caux',
+      'civil.desc':  'Wij hebben de vreugde u uit te nodigen voor het burgerlijk huwelijk.',
+
+      'laique.title': 'Burgerlijke ceremonie',
+      'laique.place': 'Basisschool Thomas Pesquet<br>Bacqueville-en-Caux',
+      'laique.desc':  "Na de officiële \"ja's\" volgt de burgerlijke ceremonie — een reis door onze verhalen, onze families en de beloften die we kiezen te eren.",
+
+      'vin.title': 'Receptie',
+      'vin.place': 'Basisschool Thomas Pesquet<br>Bacqueville-en-Caux',
+      'vin.desc':  'Na de emotie en de vreugde komen we samen voor de receptie — lachen, heffende glazen en het plezier van samen zijn.',
+
+      'soiree.title': 'Avond & Diner',
+      'soiree.place': 'Basisschool Thomas Pesquet<br>Bacqueville-en-Caux',
+      'soiree.desc':  'De avond wordt voortgezet met een diner, lange gesprekken, weerklinkkend gelach en glazen die steeds worden bijgevuld!',
+
+      'brunch.title': 'Brunch',
+      'brunch.place': 'Basisschool Thomas Pesquet<br>Bacqueville-en-Caux',
+      'brunch.desc':  'Als de harten vol zijn en de hoofden misschien nog een beetje wazig… kom dan samen voor een ontspannen brunch, vol lachen, spelletjes en zoete momenten.',
+
+      'bbq.title': 'Barbecue',
+      'bbq.place': 'Basisschool Thomas Pesquet<br>Bacqueville-en-Caux',
+      'bbq.desc':  'Voor de laatste overlevenden nodigen we u uit om de magie voort te zetten rond een barbecue en samen de laatste zonsondergang te genieten.',
+
+      'countdown.title':   'Aftellen',
+      'countdown.days':    'Dagen',
+      'countdown.hours':   'Uren',
+      'countdown.minutes': 'Minuten',
+      'countdown.seconds': 'Seconden',
+
+      'info.title': 'Praktische Info',
+
+      'dresscode.title': 'Kledingadvies',
+      'dresscode.desc':  'Voel je vrij om je op te kleden, maar vergeet niet een meer ontspannen outfit voor de dag erna!',
+
+      'hebergement.title': 'Verblijf',
+      'hebergement.desc':  'Er zijn accommodaties te vinden in de omgeving. Aarzel niet om ons te vragen voor hulp bij het zoeken.',
+
+      'liste.title': 'Huwelijkslijst',
+      'liste.desc':  'Uw aanwezigheid is ons mooiste cadeau. Als u wilt bijdragen, is er een collectebus beschikbaar.',
+
+      'capsule.title': 'Tijdcapsule',
+      'capsule.desc1': 'Op ons huwelijk maken we een tijdcapsule die we openen op ons 5e jubileum.',
+      'capsule.desc2': 'Elke bijdrage — een brief, foto of symbolisch object — is van harte welkom.',
+
+      'rsvp.title':       'Een vraag?',
+      'rsvp.intro':       'Informatie, dieetwensen of een vraag? Aarzel niet om contact met ons op te nemen.',
+      'rsvp.name':        'Uw naam',
+      'rsvp.email':       'Uw e-mailadres',
+      'rsvp.message':     'Een woordje? Voedingswensen?',
+      'rsvp.submit':      'Verzenden',
+      'rsvp.success':     'Dank u! Uw bericht is goed ontvangen. ✨',
+
+      'footer.date': '15 Mei 2026',
+    },
+  };
+
+  function applyLang(lang) {
+    const t = translations[lang] || translations.fr;
+    document.documentElement.lang = lang;
+
+    // textContent
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      const key = el.dataset.i18n;
+      if (t[key] !== undefined) el.textContent = t[key];
+    });
+
+    // innerHTML (éléments avec <br> ou balises internes)
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      const key = el.dataset.i18nHtml;
+      if (t[key] !== undefined) el.innerHTML = t[key];
+    });
+
+    // placeholder des champs de formulaire
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+      const key = el.dataset.i18nPlaceholder;
+      if (t[key] !== undefined) el.placeholder = t[key];
+    });
+
+    // état actif du bouton
+    document.querySelectorAll('.lang-btn').forEach(function (btn) {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+
+    localStorage.setItem('lang', lang);
+  }
+
+  function init() {
+    const saved   = localStorage.getItem('lang');
+    const browser = (navigator.language || 'fr').slice(0, 2);
+    const lang    = saved || (translations[browser] ? browser : 'fr');
+    applyLang(lang);
+
+    document.querySelectorAll('.lang-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        applyLang(btn.dataset.lang);
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
