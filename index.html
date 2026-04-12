@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
 
@@ -17,8 +18,8 @@
     <div class="hero__overlay"></div>
     <div class="hero__content fade-in">
       <p class="hero__subtitle">Nous nous marions</p>
-      <h1 class="hero__title">Prénom <span class="amp">&amp;</span> Prénom</h1>
-      <div class="hero__date">12 Juillet 2026</div>
+      <h1 class="hero__title">Laurina <span class="amp">&amp;</span> Florent</h1>
+      <div class="hero__date">15 mai 2026</div>
       <a href="#details" class="btn">Découvrir</a>
     </div>
   </header>
@@ -52,22 +53,44 @@
       <div class="section__divider reveal"></div>
       <div class="details__grid">
         <div class="details__card reveal">
-          <div class="details__icon">⛪</div>
-          <h3>Cérémonie</h3>
-          <p class="details__time">14h30</p>
-          <p>Église Saint-Martin<br>12 Rue de l'Église<br>75000 Paris</p>
+          <div class="details__icon">🏛️</div>
+          <h3>Mariage civil</h3>
+          <p class="details__time">14h00</p>
+          <p>Mairie de Bacqueville-en-Caux</p>
+          <p class="details__desc">Nous avons la joie de vous convier pour le mariage civil.</p>
+        </div>
+        <div class="details__card reveal">
+          <div class="details__icon">🌿</div>
+          <h3>Cérémonie laïque</h3>
+          <p class="details__time">15h00</p>
+          <p>École élémentaire Thomas Pesquet<br>Bacqueville-en-Caux</p>
+          <p class="details__desc">Les "oui" officiels prononcés, place à la cérémonie laïque, voyage entre nos histoires, nos familles et les promesses que nous choisissons d'honorer.</p>
         </div>
         <div class="details__card reveal">
           <div class="details__icon">🥂</div>
-          <h3>Réception</h3>
-          <p class="details__time">18h00</p>
-          <p>Domaine de la Rose<br>Chemin des Vignes<br>77000 Melun</p>
+          <h3>Vin d'honneur</h3>
+          <p>École élémentaire Thomas Pesquet<br>Bacqueville-en-Caux</p>
+          <p class="details__desc">Après l'émotion, la joie, on se retrouve pour le vin d'honneur, entre rires, verres levés et l'envie simple de profiter.</p>
         </div>
         <div class="details__card reveal">
           <div class="details__icon">🎶</div>
-          <h3>Soirée</h3>
-          <p class="details__time">21h00</p>
-          <p>Dîner, danse et fête<br>jusqu'au bout de la nuit !</p>
+          <h3>Soirée & Repas</h3>
+          <p class="details__time">19h30</p>
+          <p>École élémentaire Thomas Pesquet<br>Bacqueville-en-Caux</p>
+          <p class="details__desc">La soirée se prolongera autour d'un repas, entre discussions qui s'étirent, rires qui résonnent et verres qui se remplissent encore !</p>
+        </div>
+        <div class="details__card reveal">
+          <div class="details__icon">☕</div>
+          <h3>Brunch</h3>
+          <p class="details__time">12h30 – 13h00</p>
+          <p>École élémentaire Thomas Pesquet<br>Bacqueville-en-Caux</p>
+          <p class="details__desc">Quand les cœurs sont remplis et les têtes parfois encore embrumées… Retrouvons-nous pour un brunch en toute simplicité, entre rires, jeux et douceurs du moment présent.</p>
+        </div>
+        <div class="details__card reveal">
+          <div class="details__icon">🔥</div>
+          <h3>Barbecue</h3>
+          <p>École élémentaire Thomas Pesquet<br>Bacqueville-en-Caux</p>
+          <p class="details__desc">Et pour les derniers survivants, nous vous proposons de prolonger la magie autour d'un barbecue afin de profiter d'un dernier coucher de soleil tous ensemble.</p>
         </div>
       </div>
     </div>
@@ -78,7 +101,7 @@
     <div class="container">
       <h2 class="section__title reveal">Compte à Rebours</h2>
       <div class="section__divider reveal"></div>
-      <div class="countdown__timer reveal" data-date="2026-07-12T14:30:00">
+      <div class="countdown__timer reveal" data-date="2026-05-15T14:00:00">
         <div class="countdown__block">
           <span class="countdown__number" id="cd-days">--</span>
           <span class="countdown__label">Jours</span>
@@ -124,25 +147,15 @@
   <!-- ============ RSVP ============ -->
   <section id="rsvp" class="section rsvp">
     <div class="container">
-      <h2 class="section__title reveal">Confirmez Votre Présence</h2>
+      <h2 class="section__title reveal">Une question ?</h2>
       <div class="section__divider reveal"></div>
-      <p class="rsvp__intro reveal">Merci de nous confirmer votre présence avant le <strong>1er Juin 2026</strong>.</p>
+      <p class="rsvp__intro reveal">Une information, un régime alimentaire, une question ? N'hésitez pas à nous contacter.</p>
       <form class="rsvp__form reveal" id="rsvp-form">
         <div class="form__group">
-          <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
         </div>
         <div class="form__group">
           <input type="email" id="email" name="email" placeholder="Votre email" required>
-        </div>
-        <div class="form__group">
-          <select id="guests" name="guests" required>
-            <option value="" disabled selected>Nombre de personnes</option>
-            <option value="1">1 personne</option>
-            <option value="2">2 personnes</option>
-            <option value="3">3 personnes</option>
-            <option value="4">4 personnes</option>
-            <option value="5">5+ personnes</option>
-          </select>
         </div>
         <div class="form__group">
           <textarea id="message" name="message" placeholder="Un petit mot ? Allergies alimentaires ?" rows="4"></textarea>
@@ -157,7 +170,8 @@
 
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
-    <p class="footer__text">Prénom <span class="amp">&amp;</span> Prénom — 12 Juillet 2026</p>
+    <p class="footer__text">Laurina <span class="amp">&amp;</span> Florent</p>
+    <p class="footer__text">15 Mai 2026</p>
     <p class="footer__heart">♥</p>
   </footer>
 
@@ -171,6 +185,6 @@
     <a href="#rsvp" class="nav-dot" aria-label="RSVP"></a>
   </nav>
 
-  <script src="script.js"></script>
+  <script src="public/js/script.js"></script>
 </body>
 </html>
