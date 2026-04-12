@@ -24,6 +24,7 @@
   --charcoal:   #3D3B38;
   --warm-gray:  #7A756E;
   --gold:       #E0C285;
+  --gold-dark:  #C9A15B;
   --blush:      #D4A99A;
 
   /* Typography */
@@ -39,6 +40,7 @@ html {
 }
 
 body {
+  cursor: default;
   font-family: var(--font);
   color: var(--charcoal);
   background-color: var(--ivory);
@@ -77,17 +79,36 @@ a {
   color: var(--charcoal);
 }
 
+.section__subtitle {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  color: var(--terra-dark);
+  margin-bottom: 1.2rem;
+}
+
+.section__date {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  color: var(--terra-dark);
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
 .section__divider {
   width: 60px;
   height: 2px;
   background: var(--gold);
-  margin: 1.2rem auto 3rem;
+  margin: 1.5rem auto;
 }
 
 .amp {
   font-style: italic;
   font-weight: 300;
-  color: var(--terracotta);
+  color: var(--blush);
 }
 
 .btn {
@@ -155,9 +176,8 @@ a {
 .hero__overlay {
   position: absolute;
   inset: 0;
-  /* Placeholder: replace with your own photo */
-  /* background: url('assets/hero.jpg') center/cover no-repeat; */
-  /* opacity: 0.15; */
+  background: url('../img/Firefly.jpg') center / cover no-repeat;
+  filter: brightness(0.6);
 }
 
 .hero__content {
@@ -170,8 +190,9 @@ a {
   font-weight: 500;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: var(--warm-gray);
+  color: var(--sand);
   margin-bottom: 1.2rem;
+  text-shadow: 2px 2px 4px rgba(61, 59, 56, 0.5);
 }
 
 .hero__title {
@@ -181,6 +202,7 @@ a {
   line-height: 1.15;
   color: var(--gold);
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(61, 59, 56, 0.5);
 }
 
 /* Use a script/display font for the main title */
@@ -199,7 +221,8 @@ a {
   font-size: 1.1rem;
   font-weight: 300;
   letter-spacing: 0.25em;
-  color: var(--gold);
+  color: var(--sand);
+  text-shadow: 2px 2px 4px rgba(61, 59, 56, 0.5);
   margin-bottom: 2.5rem;
 }
 
@@ -290,7 +313,7 @@ a {
 
 /* ---------- DÉTAILS ---------- */
 .details {
-  background: var(--sand-light);
+  background: var(--ivory);
 }
 
 .details__grid {
@@ -326,18 +349,18 @@ a {
   margin-bottom: 0.8rem;
 }
 
-.details__time {
-  font-size: 1.3rem;
-  font-weight: 300;
-  color: var(--gold);
-  margin-bottom: 0.8rem;
-}
-
-.details__card p {
+.details__card {
   font-weight: 300;
   color: var(--warm-gray);
   font-size: 0.9rem;
   line-height: 1.8;
+}
+
+.details__time {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--terra-dark);
+  margin-bottom: 0.8rem;
 }
 
 .details__desc {
@@ -346,6 +369,32 @@ a {
   font-style: italic;
   color: var(--warm-gray);
   line-height: 1.7;
+}
+
+/* Lien de géolocalisation dans les cartes */
+.details__card a {
+  align-items: center;
+  margin: 0.6rem 0;
+  padding: 0.35rem 0.2rem;
+  font-size: 2rem;
+  background: var(--gold);
+  border-radius: 999px;
+  transition: all 0.25s ease, color 0.25s ease;
+  text-decoration: none;
+}
+
+.details__card a:hover {
+  background: var(--gold-dark);
+}
+
+.golden {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px var(--gold);
+}
+
+.olive {
+  border-color: var(--olive);
+  box-shadow: 0 0 0 2px var(--olive);
 }
 
 /* ---------- COUNTDOWN ---------- */
@@ -401,7 +450,13 @@ a {
   background: var(--ivory);
 }
 
-.info__card h3 {
+.info__card_golden {
+  padding: 2rem;
+  border-left: 3px solid var(--gold);
+  background: var(--ivory);
+}
+
+.info__card h3, .info__card_golden h3 {
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.2em;
@@ -410,7 +465,7 @@ a {
   margin-bottom: 0.8rem;
 }
 
-.info__card p {
+.info__card p, .info__card_golden p {
   font-weight: 300;
   color: var(--warm-gray);
   font-size: 0.9rem;
