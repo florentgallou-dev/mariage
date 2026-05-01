@@ -16,6 +16,7 @@
       'details.title':    'La Célébration',
       'details.subtitle': 'Nous vous invitons à célébrer notre union',
       'details.subtitle2': 'voici le programme',
+      'details.words':    'Lors de notre Cérémonie laïque, un temps sera ouvert à celles et ceux qui souhaitent partager quelques mots, un souvenir ou une émotion qui nous relie — simplement si tu en as envie.',
       'details.date':     'Le vendredi 15 mai 2026',
       'details.date2':    'Le samedi 16 mai 2026',
 
@@ -87,6 +88,7 @@
       'details.title':    'The Celebration',
       'details.subtitle': 'We invite you to celebrate our union',
       'details.subtitle2': 'here is the programme',
+      'details.words':    'During our secular ceremony, a moment will be open to those who wish to share a few words, a memory, or an emotion that connects us — simply if you feel like it.',
       'details.date':     'Friday, May 15, 2026',
       'details.date2':    'Saturday, May 16, 2026',
 
@@ -160,6 +162,7 @@
       'details.title':    'De Viering',
       'details.subtitle': 'We nodigen u uit om ons huwelijk te vieren',
       'details.subtitle2': 'dit is het programma',
+      'details.words':    'Tijdens onze Wereldlijke ceremonie is er een moment voor iedereen die een paar woorden, een herinnering of een emotie die ons verbindt wil delen — gewoon als je daar zin in hebt.',
       'details.date':     'Vrijdag 15 mei 2026',
       'details.date2':    'Zaterdag 16 mei 2026',
 
@@ -167,9 +170,9 @@
       'civil.place': 'Gemeentehuis — Bacqueville-en-Caux',
       'civil.desc':  'Wij hebben de vreugde u uit te nodigen voor het burgerlijk huwelijk.',
 
-      'laique.title': 'Burgerlijke ceremonie',
+      'laique.title': 'Wereldlijke ceremonie',
       'laique.place': 'Basisschool Thomas Pesquet<br>Bacqueville-en-Caux',
-      'laique.desc':  "Na de officiële \"ja's\" volgt de burgerlijke ceremonie — een reis door onze verhalen, onze families en de beloften die we kiezen te eren.",
+      'laique.desc':  "Na de officiële \"ja's\" volgt de wereldlijke ceremonie — een reis door onze verhalen, onze families en de beloften die we kiezen te eren.",
 
       'vin.title': 'Receptie',
       'vin.place': 'Basisschool Thomas Pesquet<br>Bacqueville-en-Caux',
